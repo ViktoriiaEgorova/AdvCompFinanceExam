@@ -4,7 +4,7 @@ The current price of the option comes from the Black and Scholes (BS) formula.
 
 The solution for the exercise is separated of three different files for different stochastic processes (files "VaR GBM.py", "VaR Heston.py", "VaR VG.py") for greater convenience with working with parameters. There is the same algorithm for every code:
 - Set the parameters (either default or given from the command line). In particular, the term structure is imported from the file "ir.py".
-- Prepare the right form of term structure by interpolating. Here we use the le "ACF.py" (the le with such a
+- Prepare the right form of term structure by interpolating. Here we use the file "ACF.py" (the file with such a
 common functions).
 - Based on the assumption that market prices are Black and Scholes prices, we compute the option price.
 - Depending on the model, we generate trajectories (up to the maturity of the option T and up to a VaR time tM).
